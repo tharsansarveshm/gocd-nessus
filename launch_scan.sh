@@ -5,4 +5,4 @@ SECRET_KEY="6ec97ac59d6d274b11dc55a449399756761b06e639640b07c63c8d5c07fde9e9"
 
 curl -k -X POST \
 -H "X-ApiKeys: accessKey=88749145696935073a326e16d0776f92300bebc430a0069333594d37a8a7538a; secretKey=6ec97ac59d6d274b11dc55a449399756761b06e639640b07c63c8d5c07fde9e9" \
-https://localhost:8834/scans/3/launch
+https://localhost:8834/scans/17/launch
