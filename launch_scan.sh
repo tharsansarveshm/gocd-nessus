@@ -1,8 +1,9 @@
 #!/bin/bash
 
-ACCESS_KEY="88749145696935073a326e16d0776f92300bebc430a0069333594d37a8a7538a"
-SECRET_KEY="6ec97ac59d6d274b11dc55a449399756761b06e639640b07c63c8d5c07fde9e9"
+SCAN_ID=23
 
-curl -k -X POST \
--H "X-ApiKeys: accessKey=88749145696935073a326e16d0776f92300bebc430a0069333594d37a8a7538a; secretKey=6ec97ac59d6d274b11dc55a449399756761b06e639640b07c63c8d5c07fde9e9" \
-https://localhost:8834/scans/17/launch
+curl -sk -X POST \
+-H "X-ApiKeys: accessKey=dbc8cc6059171ddc67abb718477b9115d29f3cacecd2f4c9e5412f47f23cd695; secretKey=34492690d49059d96fbfe5f6188b22621d787ac1adb8d1579a47995878e1c876" \
+https://tharsan-virtualbox:8834/scans/$SCAN_ID/launch
+
+echo "Nessus scan launched."
